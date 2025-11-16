@@ -381,6 +381,12 @@ void AX_MOTOR_SetZeroMode(uint8_t mode)
     if(mode == MOTOR_ZERO_MODE_BRAKE || mode == MOTOR_ZERO_MODE_COAST)
         ax_motor_zero_mode = mode;
 }
+
+void AX_MOTOR_SafeStop(void)
+{
+    AX_MOTOR_SetZeroMode(MOTOR_ZERO_MODE_BRAKE);
+    AX_MOTOR_SetSpeeds(0, 0, 0, 0);
+}
     }
 }
 

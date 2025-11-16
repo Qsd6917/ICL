@@ -1,23 +1,23 @@
 /**			                                                    
-		   ____                    _____ _______ _____       XTARK@Ëþ¿Ë´´ÐÂ
+		   ____                    _____ _______ _____       XTARK@ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½
 		  / __ \                  / ____|__   __|  __ \ 
 		 | |  | |_ __   ___ _ __ | |       | |  | |__) |
 		 | |  | | '_ \ / _ \ '_ \| |       | |  |  _  / 
 		 | |__| | |_) |  __/ | | | |____   | |  | | \ \ 
 		  \____/| .__/ \___|_| |_|\_____|  |_|  |_|  \_\
 				| |                                     
-				|_|                OpenCTR   »úÆ÷ÈË¿ØÖÆÆ÷
+				|_|                OpenCTR   ï¿½ï¿½ï¿½ï¿½ï¿½Ë¿ï¿½ï¿½ï¿½ï¿½ï¿½
 									 
   ****************************************************************************** 
   *           
-  * °æÈ¨ËùÓÐ£º XTARK@Ëþ¿Ë´´ÐÂ  °æÈ¨ËùÓÐ£¬µÁ°æ±Ø¾¿
-  * ¹«Ë¾ÍøÕ¾£º www.xtark.cn   www.tarkbot.com
-  * ÌÔ±¦µêÆÌ£º https://xtark.taobao.com  
-  * Ëþ¿ËÎ¢ÐÅ£º Ëþ¿Ë´´ÐÂ£¨¹Ø×¢¹«ÖÚºÅ£¬»ñÈ¡×îÐÂ¸üÐÂ×ÊÑ¶£©
+  * ï¿½ï¿½È¨ï¿½ï¿½ï¿½Ð£ï¿½ XTARK@ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½  ï¿½ï¿½È¨ï¿½ï¿½ï¿½Ð£ï¿½ï¿½ï¿½ï¿½ï¿½Ø¾ï¿½
+  * ï¿½ï¿½Ë¾ï¿½ï¿½Õ¾ï¿½ï¿½ www.xtark.cn   www.tarkbot.com
+  * ï¿½Ô±ï¿½ï¿½ï¿½ï¿½Ì£ï¿½ https://xtark.taobao.com  
+  * ï¿½ï¿½ï¿½ï¿½Î¢ï¿½Å£ï¿½ ï¿½ï¿½ï¿½Ë´ï¿½ï¿½Â£ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ÚºÅ£ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Â¸ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¶ï¿½ï¿½
   *      
   ******************************************************************************
-  * @×÷  Õß  Ëþ¿Ë´´ÐÂÍÅ¶Ó
-  * @ÄÚ  ÈÝ  »úÆ÷ÈËÔË¶¯Ñ§½âÎö
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½Å¶ï¿½
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½
   * 
   ******************************************************************************
   */
@@ -27,28 +27,28 @@
 #include "ax_robot.h"
 #include "ax_speed.h"
 
-//º¯Êý¶¨Òå
-void ROBOT_MEC_Kinematics(void);   //ÂóÂÖÄ£ÐÍ
-void ROBOT_FWD_Kinematics(void);   //ËÄÂÖ²îËÙÄ£ÐÍ
-void ROBOT_TWD_Kinematics(void);   //Á½ÂÖ²îËÙÄ£ÐÍ
-void ROBOT_AKM_Kinematics(void);   //°¢¿ËÂüÄ£ÐÍ
-void ROBOT_OMT_Kinematics(void);   //ÈýÂÖÈ«ÏòÄ£ÐÍ
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+void ROBOT_MEC_Kinematics(void);   //ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+void ROBOT_FWD_Kinematics(void);   //ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+void ROBOT_TWD_Kinematics(void);   //ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+void ROBOT_AKM_Kinematics(void);   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½
+void ROBOT_OMT_Kinematics(void);   //ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Ä£ï¿½ï¿½
 
-void AX_ROBOT_Stop(void);   //»úÆ÷ÈËÍ£Ö¹ÔË¶¯º¯Êý
+void AX_ROBOT_Stop(void);   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£Ö¹ï¿½Ë¶ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
 /**
-  * @¼ò  Êö  »úÆ÷ÈËÔË¶¯Ñ§´¦Àí£¬²»Í¬ÀàÐÍµ×ÅÌ½øÈë²»Í¬´¦Àíº¯Êý
-  * @²Î  Êý  ÎÞ
-  * @·µ»ØÖµ  ÎÞ
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ï¿½Íµï¿½ï¿½Ì½ï¿½ï¿½ë²»Í¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½
+  * @ï¿½ï¿½ï¿½ï¿½Öµ  ï¿½ï¿½
   */
 void AX_ROBOT_Kinematics(void)
 {	
 	
-	//ÅÐ¶Ï»úÆ÷ÈËÔË¶¯ÊÇ·ñ¿ªÆô
+	//ï¿½Ð¶Ï»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½
 	if(ax_robot_move_enable == 0)
 	{
-		//Ä¿±êËÙ¶ÈÉèÖÃÎª0
+		//Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½Îª0
 		R_Vel.TG_IX = 0;
 		R_Vel.TG_IY = 0;
 		R_Vel.TG_IW = 0;
@@ -79,30 +79,26 @@ void AX_ROBOT_Kinematics(void)
 
 
 /**
-  * @¼ò  Êö  »úÆ÷ÈËÍ£Ö¹ÔË¶¯×´Ì¬
-  * @²Î  Êý  ÎÞ
-  * @·µ»ØÖµ  ÎÞ
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í£Ö¹ï¿½Ë¶ï¿½×´Ì¬
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½
+  * @ï¿½ï¿½ï¿½ï¿½Öµ  ï¿½ï¿½
   */
 void AX_ROBOT_Stop(void)
 {
-	
-	//ÉèÖÃµç»úPWMÖµ
-	AX_MOTOR_A_SetSpeed(0);
-	AX_MOTOR_B_SetSpeed(0);  
-	AX_MOTOR_C_SetSpeed(0);
-	AX_MOTOR_D_SetSpeed(0);  
+
+    AX_MOTOR_SafeStop();
 	
 }
 
 /**
-  * @¼ò  Êö  »úÆ÷ÈËÔË¶¯Ñ§´¦Àí-Âó¿ËÄÉÄ·ÂÖ
-  * @²Î  Êý  ÎÞ
-  * @·µ»ØÖµ  ÎÞ
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½
+  * @ï¿½ï¿½ï¿½ï¿½Öµ  ï¿½ï¿½
   */
 void ROBOT_MEC_Kinematics(void)
 {
 
-	//Í¨¹ý±àÂëÆ÷»ñÈ¡³µÂÖÊµÊ±×ªËÙm/s
+	//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ÊµÊ±×ªï¿½ï¿½m/s
 	R_Wheel_A.RT = (float) ((int16_t)AX_ENCODER_A_GetCounter()*MEC_WHEEL_SCALE);
 	AX_ENCODER_A_SetCounter(0);
 	R_Wheel_B.RT = (float)-((int16_t)AX_ENCODER_B_GetCounter()*MEC_WHEEL_SCALE);
@@ -112,15 +108,15 @@ void ROBOT_MEC_Kinematics(void)
 	R_Wheel_D.RT = (float)-((int16_t)AX_ENCODER_D_GetCounter()*MEC_WHEEL_SCALE);
 	AX_ENCODER_D_SetCounter(0);
 	
-	//µ÷ÊÔÊä³öÂÖ×Ó×ªËÙ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 	//printf("@%f  %f   \r\n",R_Wheel_A.RT,R_Wheel_B.RT);
 	
-	//ÔË¶¯Ñ§Õý½âÎö£¬ÓÉ»úÆ÷ÈËÂÖ×ÓËÙ¶È¼ÆËã»úÆ÷ÈËËÙ¶È
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
 	R_Vel.RT_IX = (( R_Wheel_A.RT + R_Wheel_B.RT + R_Wheel_C.RT + R_Wheel_D.RT)/4)*1000;
 	R_Vel.RT_IY = ((-R_Wheel_A.RT + R_Wheel_B.RT + R_Wheel_C.RT - R_Wheel_D.RT)/4)*1000;
 	R_Vel.RT_IW = ((-R_Wheel_A.RT + R_Wheel_B.RT - R_Wheel_C.RT + R_Wheel_D.RT)/4/(MEC_WHEEL_BASE/2+MEC_ACLE_BASE/2))*1000;	
 	
-	//»úÆ÷ÈËÄ¿±êËÙ¶ÈÏÞÖÆ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½
 	if( R_Vel.TG_IX > R_VX_LIMIT )    R_Vel.TG_IX = R_VX_LIMIT;
 	if( R_Vel.TG_IX < (-R_VX_LIMIT))  R_Vel.TG_IX = (-R_VX_LIMIT);
 	if( R_Vel.TG_IY > R_VY_LIMIT)     R_Vel.TG_IY = R_VY_LIMIT;
@@ -128,28 +124,30 @@ void ROBOT_MEC_Kinematics(void)
 	if( R_Vel.TG_IW > R_VW_LIMIT)     R_Vel.TG_IW = R_VW_LIMIT;
 	if( R_Vel.TG_IW < (-R_VW_LIMIT))  R_Vel.TG_IW = (-R_VW_LIMIT);
 	
-	//Ä¿±êËÙ¶È×ª»¯Îª¸¡µãÀàÐÍ
+	//Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	R_Vel.TG_FX = R_Vel.TG_IX/1000.0;
 	R_Vel.TG_FY = R_Vel.TG_IY/1000.0;
 	R_Vel.TG_FW = R_Vel.TG_IW/1000.0;
 	
-	//ÔË¶¯Ñ§Äæ½âÎö£¬ÓÉ»úÆ÷ÈËÄ¿±êËÙ¶È¼ÆËãµç»úÂÖ×ÓËÙ¶È£¨m/s£©
+	if(R_Vel.TG_IX == 0 && R_Vel.TG_IY == 0 && R_Vel.TG_IW == 0)
+	{
+		AX_MOTOR_SafeStop();
+		return;
+	}
+	
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È£ï¿½m/sï¿½ï¿½
 	R_Wheel_A.TG = R_Vel.TG_FX - R_Vel.TG_FY - R_Vel.TG_FW*(MEC_WHEEL_BASE/2+MEC_ACLE_BASE/2);
 	R_Wheel_B.TG = R_Vel.TG_FX + R_Vel.TG_FY + R_Vel.TG_FW*(MEC_WHEEL_BASE/2+MEC_ACLE_BASE/2);
 	R_Wheel_C.TG = R_Vel.TG_FX + R_Vel.TG_FY - R_Vel.TG_FW*(MEC_WHEEL_BASE/2+MEC_ACLE_BASE/2);
 	R_Wheel_D.TG = R_Vel.TG_FX - R_Vel.TG_FY + R_Vel.TG_FW*(MEC_WHEEL_BASE/2+MEC_ACLE_BASE/2);
 	
-	//ÀûÓÃPIDËã·¨¼ÆËãµç»úPWMÖµ
+	//ï¿½ï¿½ï¿½ï¿½PIDï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PWMÖµ
 	R_Wheel_A.PWM = AX_SPEED_PidCtlA(R_Wheel_A.TG, R_Wheel_A.RT);   
 	R_Wheel_B.PWM = AX_SPEED_PidCtlB(R_Wheel_B.TG, R_Wheel_B.RT);  
 	R_Wheel_C.PWM = AX_SPEED_PidCtlC(R_Wheel_C.TG, R_Wheel_C.RT);  
 	R_Wheel_D.PWM = AX_SPEED_PidCtlD(R_Wheel_D.TG, R_Wheel_D.RT);  
 	
-	//ÉèÖÃµç»úPWMÖµ
-	AX_MOTOR_A_SetSpeed(-R_Wheel_A.PWM);
-	AX_MOTOR_B_SetSpeed(-R_Wheel_B.PWM);  
-	AX_MOTOR_C_SetSpeed( R_Wheel_C.PWM);
-	AX_MOTOR_D_SetSpeed( R_Wheel_D.PWM); 
+    AX_MOTOR_SetSpeeds(-R_Wheel_A.PWM, -R_Wheel_B.PWM, R_Wheel_C.PWM, R_Wheel_D.PWM);
 	
 	//printf("A%f B%f C%f D%f \r\n ",MOTOR_A.Wheel_RT, MOTOR_B.Wheel_RT, MOTOR_C.Wheel_RT, MOTOR_D.Wheel_RT  );
 	//printf("A%d B%d C%d  \r\n ",R_Vel.I_X, R_Vel.I_Y, R_Vel.I_W );
@@ -157,14 +155,14 @@ void ROBOT_MEC_Kinematics(void)
 
 
 /**
-  * @¼ò  Êö  »úÆ÷ÈËÔË¶¯Ñ§´¦Àí-ËÄÂÖ²îËÙ
-  * @²Î  Êý  ÎÞ
-  * @·µ»ØÖµ  ÎÞ
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½
+  * @ï¿½ï¿½ï¿½ï¿½Öµ  ï¿½ï¿½
   */
 void ROBOT_FWD_Kinematics(void)
 {
 
-	//Í¨¹ý±àÂëÆ÷»ñÈ¡³µÂÖÊµÊ±×ªËÙm/s
+	//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ÊµÊ±×ªï¿½ï¿½m/s
 	R_Wheel_A.RT = (float) ((int16_t)AX_ENCODER_A_GetCounter()*FWD_WHEEL_SCALE);
 	AX_ENCODER_A_SetCounter(0);
 	R_Wheel_B.RT = (float)-((int16_t)AX_ENCODER_B_GetCounter()*FWD_WHEEL_SCALE);
@@ -174,15 +172,15 @@ void ROBOT_FWD_Kinematics(void)
 	R_Wheel_D.RT = (float)-((int16_t)AX_ENCODER_D_GetCounter()*FWD_WHEEL_SCALE);
 	AX_ENCODER_D_SetCounter(0);
 	
-	//µ÷ÊÔÊä³öÂÖ×Ó×ªËÙ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 	//printf("@%f  %f   \r\n",R_Wheel_A.RT,R_Wheel_B.RT);
 	
-	//ÔË¶¯Ñ§Õý½âÎö£¬ÓÉ»úÆ÷ÈËÂÖ×ÓËÙ¶È¼ÆËã»úÆ÷ÈËËÙ¶È
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
 	R_Vel.RT_IX = (( R_Wheel_A.RT + R_Wheel_B.RT + R_Wheel_C.RT + R_Wheel_D.RT)/4)*1000;
 	R_Vel.RT_IY = 0;
 	R_Vel.RT_IW = ((-R_Wheel_A.RT + R_Wheel_B.RT - R_Wheel_C.RT + R_Wheel_D.RT)/(2*FWD_WB_SCALE*FWD_WHEEL_BASE))*1000;	
 	
-	//»úÆ÷ÈËÄ¿±êËÙ¶ÈÏÞÖÆ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½
 	if( R_Vel.TG_IX > R_VX_LIMIT )    R_Vel.TG_IX = R_VX_LIMIT;
 	if( R_Vel.TG_IX < (-R_VX_LIMIT))  R_Vel.TG_IX = (-R_VX_LIMIT);
 	if( R_Vel.TG_IY > R_VY_LIMIT)     R_Vel.TG_IY = R_VY_LIMIT;
@@ -190,65 +188,59 @@ void ROBOT_FWD_Kinematics(void)
 	if( R_Vel.TG_IW > R_VW_LIMIT)     R_Vel.TG_IW = R_VW_LIMIT;
 	if( R_Vel.TG_IW < (-R_VW_LIMIT))  R_Vel.TG_IW = (-R_VW_LIMIT);
 	
-	//Ä¿±êËÙ¶È×ª»¯Îª¸¡µãÀàÐÍ
+	//Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	R_Vel.TG_FX = R_Vel.TG_IX/1000.0;
 	R_Vel.TG_FY = 0;
 	R_Vel.TG_FW = R_Vel.TG_IW/1000.0;
 	
-	//ÔË¶¯Ñ§Äæ½âÎö£¬ÓÉ»úÆ÷ÈËÄ¿±êËÙ¶È¼ÆËãµç»úÂÖ×ÓËÙ¶È£¨m/s£©
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È£ï¿½m/sï¿½ï¿½
 	R_Wheel_A.TG = R_Vel.TG_FX - R_Vel.TG_FW*(FWD_WHEEL_BASE*FWD_WB_SCALE/2);
 	R_Wheel_B.TG = R_Vel.TG_FX + R_Vel.TG_FW*(FWD_WHEEL_BASE*FWD_WB_SCALE/2);
 	R_Wheel_C.TG = R_Vel.TG_FX - R_Vel.TG_FW*(FWD_WHEEL_BASE*FWD_WB_SCALE/2);
 	R_Wheel_D.TG = R_Vel.TG_FX + R_Vel.TG_FW*(FWD_WHEEL_BASE*FWD_WB_SCALE/2);
 	
 	
-	//ÀûÓÃPIDËã·¨¼ÆËãµç»úPWMÖµ
+	//ï¿½ï¿½ï¿½ï¿½PIDï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PWMÖµ
 	R_Wheel_A.PWM = AX_SPEED_PidCtlA(R_Wheel_A.TG, R_Wheel_A.RT);   
 	R_Wheel_B.PWM = AX_SPEED_PidCtlB(R_Wheel_B.TG, R_Wheel_B.RT);  
 	R_Wheel_C.PWM = AX_SPEED_PidCtlC(R_Wheel_C.TG, R_Wheel_C.RT);  
 	R_Wheel_D.PWM = AX_SPEED_PidCtlD(R_Wheel_D.TG, R_Wheel_D.RT);  
 	
-	if(R_Vel.TG_IX ==0 && R_Vel.TG_IW ==0)
+	if(R_Vel.TG_IX == 0 && R_Vel.TG_IW == 0)
 	{
-		R_Wheel_A.PWM = 0;   
-		R_Wheel_B.PWM = 0;  
-		R_Wheel_C.PWM = 0;  
-		R_Wheel_D.PWM = 0;  	
+		AX_MOTOR_SafeStop();
+		return;
 	}
 	
-	//ÉèÖÃµç»úPWMÖµ
-	AX_MOTOR_A_SetSpeed( -R_Wheel_A.PWM);
-	AX_MOTOR_B_SetSpeed( -R_Wheel_B.PWM);  
-	AX_MOTOR_C_SetSpeed(  R_Wheel_C.PWM);
-	AX_MOTOR_D_SetSpeed(  R_Wheel_D.PWM); 
+    AX_MOTOR_SetSpeeds(-R_Wheel_A.PWM, -R_Wheel_B.PWM, R_Wheel_C.PWM, R_Wheel_D.PWM);
 	
-	//Êä³öµ÷ÊÔÐÅÏ¢
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 	//printf("@%f  %f  %f %f  \r\n",R_Wheel_A.RT,R_Wheel_B.RT, R_Wheel_C.RT ,R_Wheel_D.RT);
 	//printf("A%d B%d C%d  \r\n ",R_Vel.I_X, R_Vel.I_Y, R_Vel.I_W );
 }
 
 /**
-  * @¼ò  Êö  »úÆ÷ÈËÔË¶¯Ñ§´¦Àí-Á½ÂÖ²îËÙ
-  * @²Î  Êý  ÎÞ
-  * @·µ»ØÖµ  ÎÞ
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½
+  * @ï¿½ï¿½ï¿½ï¿½Öµ  ï¿½ï¿½
   */
 void ROBOT_TWD_Kinematics(void)
 {
-	//Í¨¹ý±àÂëÆ÷»ñÈ¡³µÂÖÊµÊ±×ªËÙm/s
+	//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ÊµÊ±×ªï¿½ï¿½m/s
 	R_Wheel_A.RT = (float) ((int16_t)AX_ENCODER_A_GetCounter()*TWD_WHEEL_SCALE);
 	AX_ENCODER_A_SetCounter(0);
 	R_Wheel_B.RT = (float)-((int16_t)AX_ENCODER_B_GetCounter()*TWD_WHEEL_SCALE);
 	AX_ENCODER_B_SetCounter(0);			
 	
-	//µ÷ÊÔÊä³öÂÖ×Ó×ªËÙ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 	//printf("@%f  %f   \r\n",R_Wheel_A.RT,R_Wheel_B.RT);
 	
-	//ÔË¶¯Ñ§Õý½âÎö£¬ÓÉ»úÆ÷ÈËÂÖ×ÓËÙ¶È¼ÆËã»úÆ÷ÈËËÙ¶È
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
 	R_Vel.RT_IX = ((R_Wheel_A.RT + R_Wheel_B.RT)/2)*1000;
 	R_Vel.RT_IY = 0;
 	R_Vel.RT_IW = ((-R_Wheel_A.RT + R_Wheel_B.RT)/TWD_WHEEL_BASE)*1000;		
 	
-	//»úÆ÷ÈËÄ¿±êËÙ¶ÈÏÞÖÆ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½
 	if( R_Vel.TG_IX > R_VX_LIMIT )    R_Vel.TG_IX = R_VX_LIMIT;
 	if( R_Vel.TG_IX < (-R_VX_LIMIT))  R_Vel.TG_IX = (-R_VX_LIMIT);
 	if( R_Vel.TG_IY > R_VY_LIMIT)     R_Vel.TG_IY = R_VY_LIMIT;
@@ -256,25 +248,27 @@ void ROBOT_TWD_Kinematics(void)
 	if( R_Vel.TG_IW > R_VW_LIMIT)     R_Vel.TG_IW = R_VW_LIMIT;
 	if( R_Vel.TG_IW < (-R_VW_LIMIT))  R_Vel.TG_IW = (-R_VW_LIMIT);
 	
-	//Ä¿±êËÙ¶È×ª»¯Îª¸¡µãÀàÐÍ
+	//Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	R_Vel.TG_FX = R_Vel.TG_IX/1000.0;
 	R_Vel.TG_FY = 0;
 	R_Vel.TG_FW = R_Vel.TG_IW/1000.0;
 	
-	//ÔË¶¯Ñ§Äæ½âÎö£¬ÓÉ»úÆ÷ÈËÄ¿±êËÙ¶È¼ÆËãµç»úÂÖ×ÓËÙ¶È£¨m/s£©
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È£ï¿½m/sï¿½ï¿½
 	R_Wheel_A.TG = R_Vel.TG_FX - R_Vel.TG_FW*(TWD_WHEEL_BASE/2);
 	R_Wheel_B.TG = R_Vel.TG_FX + R_Vel.TG_FW*(TWD_WHEEL_BASE/2);	
 	
 
-	//ÀûÓÃPIDËã·¨¼ÆËãµç»úPWMÖµ
+	//ï¿½ï¿½ï¿½ï¿½PIDï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PWMÖµ
 	R_Wheel_A.PWM = AX_SPEED_PidCtlA(R_Wheel_A.TG, R_Wheel_A.RT);   
 	R_Wheel_B.PWM = AX_SPEED_PidCtlB(R_Wheel_B.TG, R_Wheel_B.RT);  
- 
-	//ÉèÖÃµç»úPWMÖµ
-	AX_MOTOR_A_SetSpeed(-R_Wheel_A.PWM);
-	AX_MOTOR_B_SetSpeed(-R_Wheel_B.PWM); 
-	AX_MOTOR_C_SetSpeed(0);
-	AX_MOTOR_D_SetSpeed(0);	
+
+	if(R_Vel.TG_IX == 0 && R_Vel.TG_IW == 0)
+	{
+		AX_MOTOR_SafeStop();
+		return;
+	}
+
+	AX_MOTOR_SetSpeeds(-R_Wheel_A.PWM, -R_Wheel_B.PWM, 0, 0);
  
 	
 	//printf("A%f B%f  \r\n ",MOTOR_A.Wheel_RT, MOTOR_B.Wheel_RT  );
@@ -283,87 +277,89 @@ void ROBOT_TWD_Kinematics(void)
 }
 
 /**
-  * @¼ò  Êö  »úÆ÷ÈËÔË¶¯Ñ§´¦Àí-°¢¿ËÂü
-  * @²Î  Êý  ÎÞ
-  * @·µ»ØÖµ  ÎÞ
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½
+  * @ï¿½ï¿½ï¿½ï¿½Öµ  ï¿½ï¿½
   */
 void ROBOT_AKM_Kinematics(void)
 {
-	double akm_spd;  //ËÙ¶È
-    double akm_angle; //Ç°ÂÖ×ªÏò½Ç¶È
-	double akm_angle_r;  //ÓÒÇ°ÂÖ×ªÏò½Ç¶È
-	double akm_angle_s;  //¶æ»ú×ªÏò½Ç¶È
-	double radius;  //×ªÍä°ë¾¶
-	int16_t servo_angle; //¶æ»ú¿ØÖÆ½Ç¶È
+	double akm_spd;  //ï¿½Ù¶ï¿½
+    double akm_angle; //Ç°ï¿½ï¿½×ªï¿½ï¿½Ç¶ï¿½
+	double akm_angle_r;  //ï¿½ï¿½Ç°ï¿½ï¿½×ªï¿½ï¿½Ç¶ï¿½
+	double akm_angle_s;  //ï¿½ï¿½ï¿½×ªï¿½ï¿½Ç¶ï¿½
+	double radius;  //×ªï¿½ï¿½ë¾¶
+	int16_t servo_angle; //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ½Ç¶ï¿½
 	
-	//Í¨¹ý±àÂëÆ÷»ñÈ¡³µÂÖÊµÊ±×ªËÙm/s
+	//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ÊµÊ±×ªï¿½ï¿½m/s
 	R_Wheel_A.RT = (float) ((int16_t)AX_ENCODER_A_GetCounter()*AKM_WHEEL_SCALE);
 	AX_ENCODER_A_SetCounter(0);
 	R_Wheel_B.RT = (float)-((int16_t)AX_ENCODER_B_GetCounter()*AKM_WHEEL_SCALE);
 	AX_ENCODER_B_SetCounter(0);	
 	
-	//µ÷ÊÔÊä³öÂÖ×Ó×ªËÙ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 	//printf("@%f  %f   \r\n",R_Wheel_A.RT,R_Wheel_B.RT);
 	
-	/*******ÕýÏòÔË¶¯Ñ§½âÎö(¸ù¾ÝÇ°½øËÙ¶ÈºÍ¶æ»ú×ª½Ç¼ÆËã)*********************************/
+	/*******ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ù¶ÈºÍ¶ï¿½ï¿½×ªï¿½Ç¼ï¿½ï¿½ï¿½)*********************************/
 	
-	//»úÆ÷ÈËÄ¿±êËÙ¶ÈÏÞÖÆ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½
 	if( R_Vel.TG_IX > R_VX_LIMIT )    R_Vel.TG_IX = R_VX_LIMIT;
 	if( R_Vel.TG_IX < (-R_VX_LIMIT))  R_Vel.TG_IX = (-R_VX_LIMIT);
 	
-	//×ªÏò½Ç¶ÈÏÞÖÆ
+	//×ªï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½ï¿½
 //	if( ax_akm_angle > R_VX_LIMIT )    ax_akm_angle = R_VX_LIMIT;
 //	if( ax_akm_angle < (-R_VX_LIMIT))  ax_akm_angle = (-R_VX_LIMIT);
 	
-	//×ª»»Îª¸¡µãÊý¼ÆËã
+	//×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	akm_spd = R_Vel.TG_IX/1000.0;
 	akm_angle = ax_akm_angle/1000.0;
+
+	if(R_Vel.TG_IX == 0)
+	{
+		AX_MOTOR_SafeStop();
+		return;
+	}
 	
-	//¸ù¾Ý×ªÏò½Ç¶È¼ÆËã×ªÍä°ë¾¶
+	//ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ç¶È¼ï¿½ï¿½ï¿½×ªï¿½ï¿½ë¾¶
 	radius = AKM_ACLE_BASE/tan(akm_angle);		
 	
-	//¸ù¾ÝÇ°ÂÖ½Ç¶È¼ÆËãÓÒÇ°ÂÖ½Ç¶È
+	//ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ö½Ç¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ö½Ç¶ï¿½
 	if(ax_akm_angle !=0 )
 	{
 
-		//ÔË¶¯Ñ§Äæ½âÎö£¬ÓÉ»úÆ÷ÈËÄ¿±êËÙ¶È¼ÆËãµç»úÂÖ×ÓËÙ¶È£¨m/s£©
+		//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È£ï¿½m/sï¿½ï¿½
 		R_Wheel_A.TG = akm_spd*(radius-0.5*AKM_WHEEL_BASE)/radius;
 		R_Wheel_B.TG = akm_spd*(radius+0.5*AKM_WHEEL_BASE)/radius;					
 		
-		//¼ÆËãÓÒÇ°ÂÖ½Ç¶È
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ö½Ç¶ï¿½
 		akm_angle_r = (atan(AKM_ACLE_BASE/((AKM_ACLE_BASE/tan(akm_angle*0.01745))+0.5*AKM_WHEEL_BASE)))*(180.0/PI);
 	}
 	else
 	{
-		//ÔË¶¯Ñ§Äæ½âÎö£¬ÓÉ»úÆ÷ÈËÄ¿±êËÙ¶È¼ÆËãµç»úÂÖ×ÓËÙ¶È£¨m/s£©
+		//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È£ï¿½m/sï¿½ï¿½
 		R_Wheel_A.TG = akm_spd;
 		R_Wheel_B.TG = akm_spd;	
 		
-		//¼ÆËãÓÒÇ°ÂÖ½Ç¶È
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ö½Ç¶ï¿½
 		akm_angle_r = 0;
 	}	
 	
-    //¸ù¾ÝÓÒÇ°ÂÖ½Ç¶È£¬¼ÆËã¶æ»ú×ªÏò½Ç¶È
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ö½Ç¶È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½Ç¶ï¿½
 	akm_angle_s = 	-(0.0041*akm_angle_r*akm_angle_r + 1.2053*akm_angle_r)*180/PI;
 	
-	//¸ù¾Ý¶æ»ú×ªÏò½Ç¶È£¬¼ÆËã¶æ»úPWM¿ØÖÆÁ¿
+	//ï¿½ï¿½ï¿½Ý¶ï¿½ï¿½×ªï¿½ï¿½Ç¶È£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PWMï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	servo_angle = (akm_angle_s*10 + ax_akm_offset);  
 	
-	//ÉèÖÃ¶æ»ú½Ç¶È£¬S1,S2ÈÎÒâÒ»¸ö¶¼¿ÉÒÔ
+	//ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½Ç¶È£ï¿½S1,S2ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	AX_SERVO_S1_SetAngle(servo_angle);
 	AX_SERVO_S2_SetAngle(servo_angle);	
 	
-	//ÀûÓÃPIDËã·¨¼ÆËãµç»úPWMÖµ
+	//ï¿½ï¿½ï¿½ï¿½PIDï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PWMÖµ
 	R_Wheel_A.PWM = AX_SPEED_PidCtlA(R_Wheel_A.TG, R_Wheel_A.RT);   
 	R_Wheel_B.PWM = AX_SPEED_PidCtlB(R_Wheel_B.TG, R_Wheel_B.RT);   
 		
-	//ÉèÖÃµç»úPWMÖµ
-	AX_MOTOR_A_SetSpeed(-R_Wheel_A.PWM);
-	AX_MOTOR_B_SetSpeed(-R_Wheel_B.PWM);  
-	AX_MOTOR_C_SetSpeed(0);
-	AX_MOTOR_D_SetSpeed(0);	
+    AX_MOTOR_SetSpeeds(-R_Wheel_A.PWM, -R_Wheel_B.PWM, 0, 0);
 	
-	//ÔË¶¯Ñ§Õý½âÎö£¬ÓÉ»úÆ÷ÈËÂÖ×ÓËÙ¶È¼ÆËã»úÆ÷ÈËËÙ¶È
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
 	R_Vel.RT_IX = ((R_Wheel_A.RT + R_Wheel_B.RT)/2)*1000;
 	R_Vel.RT_IY = 0;
 	R_Vel.RT_IW = ((-R_Wheel_A.RT + R_Wheel_B.RT)/AKM_WHEEL_BASE)*1000;	
@@ -371,13 +367,13 @@ void ROBOT_AKM_Kinematics(void)
 }
 
 /**
-  * @¼ò  Êö  »úÆ÷ÈËÔË¶¯Ñ§´¦Àí-ÈýÂÖÈ«Ïò
-  * @²Î  Êý  ÎÞ
-  * @·µ»ØÖµ  ÎÞ
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½-ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½
+  * @ï¿½ï¿½  ï¿½ï¿½  ï¿½ï¿½
+  * @ï¿½ï¿½ï¿½ï¿½Öµ  ï¿½ï¿½
   */
 void ROBOT_OMT_Kinematics(void)
 {
-	//Í¨¹ý±àÂëÆ÷»ñÈ¡³µÂÖÊµÊ±×ªËÙm/s
+	//Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ÊµÊ±×ªï¿½ï¿½m/s
 	R_Wheel_A.RT = (float)-((int16_t)AX_ENCODER_A_GetCounter()*MEC_WHEEL_SCALE);
 	AX_ENCODER_A_SetCounter(0);
 	R_Wheel_B.RT = (float) ((int16_t)AX_ENCODER_B_GetCounter()*MEC_WHEEL_SCALE);
@@ -386,15 +382,15 @@ void ROBOT_OMT_Kinematics(void)
 	AX_ENCODER_C_SetCounter(0);
 
 	
-	//µ÷ÊÔÊä³öÂÖ×Ó×ªËÙ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×ªï¿½ï¿½
 	//printf("@%f  %f   \r\n",R_Wheel_A.RT,R_Wheel_B.RT);
 	
-	//ÔË¶¯Ñ§Õý½âÎö£¬ÓÉ»úÆ÷ÈËÂÖ×ÓËÙ¶È¼ÆËã»úÆ÷ÈËËÙ¶È
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
 	R_Vel.RT_IX = ((-R_Wheel_A.RT + R_Wheel_B.RT)/SQRT3)*1000;
 	R_Vel.RT_IY = ((-R_Wheel_A.RT + R_Wheel_B.RT - 2.0*R_Wheel_C.RT)/3)*1000;
 	R_Vel.RT_IW = (( R_Wheel_A.RT + R_Wheel_B.RT + R_Wheel_C.RT)/(3*OMT_WHEEL_RADIUS))*1000;	
 	
-	//»úÆ÷ÈËÄ¿±êËÙ¶ÈÏÞÖÆ
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½ï¿½ï¿½ï¿½ï¿½
 	if( R_Vel.TG_IX > R_VX_LIMIT )    R_Vel.TG_IX = R_VX_LIMIT;
 	if( R_Vel.TG_IX < (-R_VX_LIMIT))  R_Vel.TG_IX = (-R_VX_LIMIT);
 	if( R_Vel.TG_IY > R_VY_LIMIT)     R_Vel.TG_IY = R_VY_LIMIT;
@@ -402,30 +398,32 @@ void ROBOT_OMT_Kinematics(void)
 	if( R_Vel.TG_IW > R_VW_LIMIT)     R_Vel.TG_IW = R_VW_LIMIT;
 	if( R_Vel.TG_IW < (-R_VW_LIMIT))  R_Vel.TG_IW = (-R_VW_LIMIT);
 	
-	//Ä¿±êËÙ¶È×ª»¯Îª¸¡µãÀàÐÍ
+	//Ä¿ï¿½ï¿½ï¿½Ù¶ï¿½×ªï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	R_Vel.TG_FX = R_Vel.TG_IX/1000.0;
 	R_Vel.TG_FY = R_Vel.TG_IY/1000.0;
 	R_Vel.TG_FW = R_Vel.TG_IW/1000.0;
+
+	if(R_Vel.TG_IX == 0 && R_Vel.TG_IY == 0 && R_Vel.TG_IW == 0)
+	{
+		AX_MOTOR_SafeStop();
+		return;
+	}
 	
-	//ÔË¶¯Ñ§Äæ½âÎö£¬ÓÉ»úÆ÷ÈËÄ¿±êËÙ¶È¼ÆËãµç»úÂÖ×ÓËÙ¶È£¨m/s£©
+	//ï¿½Ë¶ï¿½Ñ§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ù¶È¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶È£ï¿½m/sï¿½ï¿½
 	R_Wheel_A.TG = -0.5*R_Vel.TG_FX + 0.5*R_Vel.TG_FY + OMT_WHEEL_RADIUS*R_Vel.TG_FW;
 	R_Wheel_B.TG =  0.5*R_Vel.TG_FX + 0.5*R_Vel.TG_FY + OMT_WHEEL_RADIUS*R_Vel.TG_FW;
 	R_Wheel_C.TG = -R_Vel.TG_FY + OMT_WHEEL_RADIUS*R_Vel.TG_FW;
 
 	
-	//ÀûÓÃPIDËã·¨¼ÆËãµç»úPWMÖµ
+	//ï¿½ï¿½ï¿½ï¿½PIDï¿½ã·¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½PWMÖµ
 	R_Wheel_A.PWM = AX_SPEED_PidCtlA(R_Wheel_A.TG, R_Wheel_A.RT);   
 	R_Wheel_B.PWM = AX_SPEED_PidCtlB(R_Wheel_B.TG, R_Wheel_B.RT);  
 	R_Wheel_C.PWM = AX_SPEED_PidCtlC(R_Wheel_C.TG, R_Wheel_C.RT);  
  
 	
-	//ÉèÖÃµç»úPWMÖµ
-	AX_MOTOR_A_SetSpeed( R_Wheel_A.PWM);
-	AX_MOTOR_B_SetSpeed( R_Wheel_B.PWM);  
-	AX_MOTOR_C_SetSpeed(-R_Wheel_C.PWM);
-	AX_MOTOR_D_SetSpeed(0); 
+    AX_MOTOR_SetSpeeds(R_Wheel_A.PWM, R_Wheel_B.PWM, -R_Wheel_C.PWM, 0);
 
 }
 
 
-/******************* (C) °æÈ¨ 2023 XTARK **************************************/
+/******************* (C) ï¿½ï¿½È¨ 2023 XTARK **************************************/

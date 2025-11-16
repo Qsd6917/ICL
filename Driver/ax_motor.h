@@ -70,6 +70,7 @@ void AX_MOTOR_InitAll(void);
 void AX_MOTOR_SetSpeeds(int16_t a, int16_t b, int16_t c, int16_t d);
 void AX_MOTOR_SetZeroMode(uint8_t mode);
 extern uint8_t ax_motor_zero_mode;
+void AX_MOTOR_SafeStop(void);
 
 #endif
 
