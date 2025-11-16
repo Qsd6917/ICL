@@ -26,6 +26,7 @@
   */
 
 #include "ax_motor.h" 
+uint8_t ax_motor_zero_mode = MOTOR_ZERO_MODE;
 
 /**
   * @��  ��  ���PWM���Ƴ�ʼ����PWMƵ��Ϊ20KHZ	
@@ -124,7 +125,7 @@ void AX_MOTOR_A_SetSpeed(int16_t speed)
     }
     else
     {
-        if(MOTOR_ZERO_MODE == MOTOR_ZERO_MODE_BRAKE)
+        if(ax_motor_zero_mode == MOTOR_ZERO_MODE_BRAKE)
         {
             TIM_SetCompare1(TIM1, MOTOR_PWM_PERIOD);
             TIM_SetCompare2(TIM1, MOTOR_PWM_PERIOD);
@@ -166,7 +167,7 @@ void AX_MOTOR_B_SetSpeed(int16_t speed)
     }
     else
     {
-        if(MOTOR_ZERO_MODE == MOTOR_ZERO_MODE_BRAKE)
+        if(ax_motor_zero_mode == MOTOR_ZERO_MODE_BRAKE)
         {
             TIM_SetCompare3(TIM1, MOTOR_PWM_PERIOD);
             TIM_SetCompare4(TIM1, MOTOR_PWM_PERIOD);
@@ -307,7 +308,7 @@ void AX_MOTOR_C_SetSpeed(int16_t speed)
     }
     else
     {
-        if(MOTOR_ZERO_MODE == MOTOR_ZERO_MODE_BRAKE)
+        if(ax_motor_zero_mode == MOTOR_ZERO_MODE_BRAKE)
         {
             TIM_SetCompare1(TIM9, MOTOR_PWM_PERIOD);
             TIM_SetCompare2(TIM9, MOTOR_PWM_PERIOD);
@@ -350,7 +351,7 @@ void AX_MOTOR_D_SetSpeed(int16_t speed)
     }
     else
     {
-        if(MOTOR_ZERO_MODE == MOTOR_ZERO_MODE_BRAKE)
+        if(ax_motor_zero_mode == MOTOR_ZERO_MODE_BRAKE)
         {
             TIM_SetCompare1(TIM12, MOTOR_PWM_PERIOD);
             TIM_SetCompare2(TIM12, MOTOR_PWM_PERIOD);
@@ -360,6 +361,26 @@ void AX_MOTOR_D_SetSpeed(int16_t speed)
             TIM_SetCompare1(TIM12, 0);
             TIM_SetCompare2(TIM12, 0);
         }
+
+void AX_MOTOR_InitAll(void)
+{
+    AX_MOTOR_AB_Init();
+    AX_MOTOR_CD_Init();
+}
+
+void AX_MOTOR_SetSpeeds(int16_t a, int16_t b, int16_t c, int16_t d)
+{
+    AX_MOTOR_A_SetSpeed(a);
+    AX_MOTOR_B_SetSpeed(b);
+    AX_MOTOR_C_SetSpeed(c);
+    AX_MOTOR_D_SetSpeed(d);
+}
+
+void AX_MOTOR_SetZeroMode(uint8_t mode)
+{
+    if(mode == MOTOR_ZERO_MODE_BRAKE || mode == MOTOR_ZERO_MODE_COAST)
+        ax_motor_zero_mode = mode;
+}
     }
 }
 
